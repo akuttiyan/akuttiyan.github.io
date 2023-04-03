@@ -35,6 +35,33 @@
         text-align:center;
         background-color:center;
     }
+
+    #sqaure{
+        width: 300px;
+        height: 300px;
+        background-color:blue;
+        margin:auto;
+
+        left: 1000px;
+        position: relative;
+
+        rotate: -45deg;
+        animation: rotate 3s infinite alternate ease-in-out, slide 1s forwards ease-in-out;  
+
+        
+    }
+
+    @keyframes rotate {
+        to {
+            rotate: 45deg;
+        }
+    }
+
+    @keyframes slide {
+        to {
+            left:0;
+        }
+    }
 </style>
 <body>
     <h1 style="color:blue; font-size:50px; text-align:center; background-color: cadetblue;">My Favorite thing about school is...</h1>
@@ -70,7 +97,8 @@
     </dl>
 
     <img src="images/friends.jfif" alt = "Friends all holding hands" style ="width:50%">
-  
+
+    <div id="square"></div>
 
 </body>
 </html>
