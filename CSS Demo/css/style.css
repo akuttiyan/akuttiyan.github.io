@@ -30,3 +30,15 @@ ul.nav a:hover {
 .active {
     background-color: aliceblue;
 }
+
+h1{
+    font-family: turnip-re, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p{
+    font-family: turnip-re, serif;
+    font-weight: 400;
+    font-style: normal;
+}
