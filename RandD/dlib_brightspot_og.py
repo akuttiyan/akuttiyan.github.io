@@ -71,6 +71,7 @@ cv2.createTrackbar('threshold', 'image', 0, 255, nothing)
 while(True):
     ret, img = cap.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.GaussianBlur(gray, (35,35), 0)
     rects = detector(gray, 1)
     for rect in rects:
 

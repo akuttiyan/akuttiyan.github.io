@@ -7,7 +7,40 @@
     <title>CSS Grid Demo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    .footer{
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:azure;
+        color:black;
+        text-align: center;
+
+    }
+</style>
 <body>
+    <ul class="nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="resource.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="professional-webpage.html">Professional Webpage</a></li>
+    </ul>
     
+    <div class="grid-container">
+        <div class="grid-item navmenu">Navbar</div>
+        <div class="grid-item main-image"><img src="images/399920.jpg" alt="A tree by a lake with the shining sun " style="width:90%"></div>
+        <div class="grid-item sidenav">Side Nav</div>
+        <div class="grid-item main1">Main1</div>
+        <div class="grid-item main2">Main2</div>
+        <div class="grid-item support-section1">Support Section 1</div>
+        <div class="grid-item support-section2">Support Section 2</div>
+
+   </div> 
+
+   <div class="footer">
+        <p>Footer</p>
+   </div>
 </body>
 </html>

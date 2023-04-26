@@ -1,0 +1,182 @@
+body{
+    background-color: aliceblue;
+}
+
+
+.nav {
+    list-style-type: none;
+    background-color:darkgray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+ul.nav li {
+    float: left
+}
+
+ul.nav li a {
+    display:block;
+    padding: 8px 16px;
+    color:black;
+    text-decoration: none;
+
+}
+
+ul.nav a:hover {
+    background-color: cadetblue;
+    color:aliceblue;
+}
+
+.active {
+    background-color:lightblue
+}
+
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-gap: 10px;
+}
+
+.grid-item{
+    background-color:cornflowerblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navmenu{
+    grid-column: 1 / span 3; 
+    grid-row: 1;
+}
+
+.main-image {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.main1{
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.main2 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.sidenav{
+    grid-column: 3;
+    grid-row: 3 / span 5;
+    background-color:red;
+}
+
+.support-section1{
+    grid-column: 1;
+    grid-row: 4;
+    background-color:red;
+}
+
+.support-section2{
+    grid-column: 2;
+    grid-row: 4;
+    background-color:red;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 10px;
+    
+}
+
+.grid-item2{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    border-color: brown;
+
+}
+
+.image1{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.image2{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.image3{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.image4{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.image5{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.image6{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.image7{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.image8{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.image9{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+
+.small-nav{
+    grid-column:1;
+    grid-row:2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.small-nav {
+    list-style-type: none;
+    background-color:lightsteelblue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+ul.small-nav li a {
+    display:block;
+    padding: 8px 16px;
+    color:black;
+    text-decoration: none;
+
+
+}
+
+ul.small-nav a:hover {
+    background-color: cadetblue;
+    color:aliceblue;
+}
+
+.title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}

@@ -24,6 +24,7 @@ kernel = np.ones((9, 9), np.uint8)
 cv2.createTrackbar('threshold', 'image', SLIDER_MIN, SLIDER_MAX)
 
 
+
 # Function to convert facial landmarks into NumPy array
 def shape_to_np(shape, dtype="int"):
     # Initialize the list of (x, y)-coordinates
@@ -78,6 +79,7 @@ while(True):
 
     # Convert the image to grayscale and detect faces in the image
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    gray = cv2.GaussianBlur(gray, 9, 0)
     rects = detector(gray, scale_factor)###########################################
     # Loop through the detected faces
     for rect in rects:
