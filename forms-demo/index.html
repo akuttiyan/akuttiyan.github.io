@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz and Two Truths and a Lie</title>
+</head>
+<body>
+    <h1>Welcome to my quiz and 2 truths and a lie game!</h1>
+    <h2>Who are you?</h2>
+    <form action="" id="name-form">
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" name="age" id="age"><br>
+
+    </form>
+
+    <br>
+    <input type="button" value="SUBMIT" onclick="greet()">
+    <p id="greet">Welcome</p>
+
+    <hr>
+
+    <h2>Let's play trivia!</h2>
+    <p>What is the only food that cannot go bad?</p>
+    <p id="trivia-answer"></p>
+    <form action="">
+        <input type="radio" name="trivia1" id="chocolate">
+        <label for="chocolate">Dark Chocolate</label><br>
+        <input type="radio" name="trivia1" id="tuna">
+        <label for="tuna">Canned Tuna</label><br>
+        <input type="radio" name="trivia1" id="honey">
+        <label for="honey">Honey</label><br>
+        
+    </form>
+
+    <input type="button" value="SUBMIT" onclick="trivia1()">
+
+    <hr>
+
+    <h2>Lets play 2 truths and a lie!</h2>
+    <p>Which one is the lie?</p>
+    <p id="answer"></p>
+
+    <form action="">
+        <input type="radio" name="game" id="truth1">
+        <label for="truth1">I am not allergic to anything</label><br>
+        <input type="radio" name="game" id="truth2">
+        <label for="truth2">I had eggs for breakfast</label><br>
+        <input type="radio" name="game" id="lie">
+        <label for="lie">I broke my leg when I was climbing a tree</label><br>
+    </form>
+
+    <input type="button" value="SUBMIT" onclick="twoTruthsAndALie()">
+
+<script src="js/game.js"></script>
+</body>
+
+</html>
