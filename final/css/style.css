@@ -1,0 +1,147 @@
+
+.nav {
+    list-style-type: none;
+    background-color:darkgray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+ul.nav li {
+    float: left
+}
+
+ul.nav li a {
+    display:block;
+    padding: 8px 16px;
+    color:black;
+    text-decoration: none;
+
+}
+
+ul.nav a:hover {
+    background-color: cadetblue;
+    color:aliceblue;
+}
+
+.active {
+    background-color:skyblue;
+}
+
+.grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto;
+       /* grid-gap: 10px; */
+}
+
+.grid-item{
+   text-align: center;
+}
+
+.navmenu{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.header{
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    text-align: center;
+    font-family:articulat cf heavy;
+
+}
+
+.main-img{
+    /*background-color:lightblue; */
+   
+    grid-column: 1 /span 3;
+    grid-row: 3;
+    text-align: center;
+    
+}
+
+.subtitle{
+    grid-column: 2;
+    grid-row: 4;
+    font-family: articulat cf normal;
+    text-align: center;
+}
+
+.quote-button{
+    grid-column: 2;
+    grid-row: 5;
+    text-align: center;
+}
+
+.home-img1{
+    grid-column: 1;
+    grid-row: 6;
+    margin: 10px;
+}
+
+.home-img2{
+    grid-column: 2;
+    grid-row: 6;
+    text-align: center;
+    margin: 10px;
+}
+
+.home-img3{
+    grid-column: 3;
+    grid-row: 6;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact{
+    grid-column: 1 / span 3;
+    grid-row: 8 / span 11;
+    background-color: lightslategray;
+
+
+}
+
+.contact-us{
+    grid-column: 1;
+    grid-row: 8;
+    text-align: left;
+    margin: 10px;
+    color:white;
+    font-family: articulat cf normal;
+}
+
+.address{
+    grid-column: 1;
+    grid-row: 9;
+    text-align: left;
+    margin: 10px;
+    color:white;
+    font-family: articulat cf extra light;
+}
+
+.number-email{
+    grid-column: 1;
+    grid-row: 10;
+    text-align: left;
+    margin: 10px;
+    color:white;
+    font-family: articulat cf extra light;
+}
+
+.hours{
+    grid-column: 1;
+    grid-row: 11;
+    text-align: left;
+    margin: 10px;
+    color:white;
+    font-family: articulat cf extra light;
+}
+
+
+.map{
+    grid-column: 2 / span 3;
+    grid-row: 8 / span 11;
+    margin:10px;
+    text-align: right;
+
+}

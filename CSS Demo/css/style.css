@@ -1,6 +1,7 @@
 body {
     background-color:antiquewhite;
     font-size: medium;
+    
 }
 
 .nav {
@@ -31,14 +32,14 @@ ul.nav a:hover {
     background-color: aliceblue;
 }
 
-h1{
-    font-family: turnip-re, serif;
-    font-weight: 700;
+
+
+p{
+    font-size: large;
+    font-weight: 400;
     font-style: normal;
 }
 
-p{
-    font-family: turnip-re, serif;
-    font-weight: 400;
-    font-style: normal;
+h1 {
+    font-family: articulat cf;
 }
