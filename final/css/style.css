@@ -1,7 +1,14 @@
 
+body{
+    background-color:rgb(159, 166, 173);
+}
+
+h1{
+    font-family: articulat cf heavy;
+}
 .nav {
     list-style-type: none;
-    background-color:darkgray;
+    background-color:rgb(159, 166, 173);
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -102,9 +109,9 @@ ul.nav a:hover {
 }
 
 .contact-us{
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 8;
-    text-align: left;
+    text-align: center;
     margin: 10px;
     color:white;
     font-family: articulat cf normal;
@@ -113,35 +120,34 @@ ul.nav a:hover {
 .address{
     grid-column: 1;
     grid-row: 9;
-    text-align: left;
+    text-align: center;
     margin: 10px;
     color:white;
     font-family: articulat cf extra light;
 }
 
 .number-email{
-    grid-column: 1;
-    grid-row: 10;
-    text-align: left;
+    grid-column: 2;
+    grid-row: 9;
+    text-align: center;
     margin: 10px;
     color:white;
     font-family: articulat cf extra light;
 }
 
 .hours{
-    grid-column: 1;
-    grid-row: 11;
-    text-align: left;
+    grid-column: 3;
+    grid-row: 9;
+    text-align: center;
     margin: 10px;
     color:white;
     font-family: articulat cf extra light;
 }
 
-
-.map{
-    grid-column: 2 / span 3;
-    grid-row: 8 / span 11;
-    margin:10px;
-    text-align: right;
-
+#demo{
+    grid-column: 2;
+    grid-row: 6;
+    margin-left: 140px;
+    margin-top: 10px;
 }
+
