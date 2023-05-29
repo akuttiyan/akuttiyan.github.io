@@ -3,12 +3,16 @@ let product = document.getElementById("product").value;
 let measurements = document.getElementById("measurements").value;
 let moreInfo = document.getElementById("more-info").value;
 
+let formHeader = document.getElementById("form-header");
+
+
+
 function check(){
     email = document.getElementById("email").value;
     product = document.getElementById("product").value;
     measurements = document.getElementById("measurements").value;
     moreInfo = document.getElementById("more-info").value;
-    
+
     if(email === "" || product === "" || measurements === "" || moreInfo === ""){
         alert("Please fill out all the information before submitting");
     }
@@ -30,6 +34,8 @@ function sendInfo(){
     let outputInfo = document.getElementById("output-info");
 
     quoteForm.innerHTML = "";
+    formHeader.innerHTML = "";
+    
 
     paragraph.innerHTML = "Your Information has Been Sent!";
     outputEmail.innerHTML = "Email: " + email;
@@ -37,7 +43,8 @@ function sendInfo(){
     outputMeasurements.innerHTML = "Measurements: " + measurements;
     outputInfo.innerHTML = "Additional Information: " + moreInfo;
 
-    
 
-    
 }
+
+
+
