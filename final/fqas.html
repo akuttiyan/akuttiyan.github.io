@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fqas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .accordian{ /* W3schools */
+        background-color: slategray;
+        color:white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        }
+    
+        .active2, .accordian:hover{  /* W3schools */
+            background-color: rgb(95, 109, 123);
+        }
+
+        .title{
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        .img{
+            grid-row: 3;
+
+        }
+
+        .acc-container{
+            grid-row:4;
+        }
+
+        .accordian:after{ /* W3schools */
+            content: '\002B';
+            color:black;
+            font-weight:bold;
+            float:right;
+            margin-left:5px;
+            
+            
+        }
+
+        .active2:after { /* W3schools */
+            content: "\2212";
+        }
+    
+        .panel{  /* W3schools */
+            padding: 0 18px;
+            background: rgb(239, 239, 240);
+            
+            max-height:0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item navmenu" >
+            <ul class="nav" >
+                <li style="height: 50px;"><a href="index.html" style="margin-top: 3px;">Home</a></li>
+                <li class="dropdown1" style="height: 50px;margin-top: 3px;">
+                    <a href="javascript:void(0)" class="dropbtn1">Gallery</a> <!--W3schools-->
+                    <div class="dropdown-content1"> <!--W3schools-->
+                        <a href="gallery-carpet.html">Carpets</a> <!--W3schools-->
+                        <a href="gallery-tile.html">Tiles</a> <!--W3schools-->
+                        <a href="gallery-flooring.html">Hardwood</a> <!--W3schools-->
+                    </div>
+                </li>
+                <li class="active"><a href="faqs.html" style="height: 50px; margin-top: 3px;">FAQS</a></li>
+                <li ><a href="about.html" style="height: 50px; margin-top: 3px;">About Us</a></li>
+                <li>
+                    <div class="grid-item quote-button"  style="height: 50px;">
+                        <a href="forms.html" class="btn btn-primary" role="button" style="margin-left: 760px;">Get an Estimate</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="grid-item title">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+        <div class="grid-item img">
+            <img src="images/FAQ2.jpg" alt="Fancy blue and white living room" style="width: 1250px; margin-bottom: 5px;">
+        </div>
+        <div class="grid-item acc-container"><!--W3schools-->
+            <button class="accordian">1. What are the advantages of carpets over other flooring options? </button> <!--W3schools-->
+            <div class="panel"><!--W3schools-->
+                <p>Carpets offer a soft and comfortable underfoot feel, excellent insulation, noise reduction, and can add warmth and coziness to a room. They also provide a wide range of colors, patterns, and textures to suit various décor styles. </p>
+            </div>
+    
+            <button class="accordian">2. How do I choose the right carpet for my home or business? </button>
+            <div class="panel">
+                <p>Consider factors like the carpet's durability, stain resistance, fiber type (such as nylon, polyester, or wool), and appropriate pile height for the desired level of comfort. It's also important to consider the specific room's traffic levels and maintenance requirements. </p>
+            </div>
+    
+            <button class="accordian">3. Can carpets help with sound insulation and reducing noise? </button>
+            <div class="panel">
+                <p>Yes, carpets have sound-absorbing properties that can help reduce noise transmission between floors and rooms, creating a quieter and more peaceful environment.</p>
+            </div>
+            <button class="accordian">4. What are the best practices for carpet maintenance and cleaning? </button>
+            <div class="panel">
+                <p>Regular vacuuming is essential to remove dirt and debris. Promptly address spills by blotting, not rubbing, the affected area. Professional deep cleaning is recommended every 12-18 months to remove deep-seated dirt and maintain the carpet's appearance and longevity.</p>
+            </div>
+            <button class="accordian">5. What types of tiles are suitable for different areas of the home, such as kitchens, bathrooms, or outdoor spaces? </button>
+            <div class="panel">
+                <p>Porcelain and ceramic tiles are popular choices for kitchens and bathrooms due to their water resistance and durability. For outdoor spaces, consider porcelain or natural stone tiles that can withstand varying weather conditions.</p>
+            </div>
+            <button class="accordian">6. How do I select the right tile size, shape, and color for my project? </button>
+            <div class="panel">
+                <p>Choose tile sizes and shapes that complement the size of the room and its overall design. Consider the color scheme, lighting, and intended atmosphere. Larger tiles can create a sense of spaciousness, while smaller tiles can add intricate details. </p>
+            </div>
+            <button class="accordian">7. What is the difference between ceramic, porcelain, and natural stone tiles? </button>
+            <div class="panel">
+                <p>Ceramic tiles are made from clay and are suitable for indoor use. Porcelain tiles are denser and more durable than ceramic tiles, making them ideal for high-traffic areas and outdoor use. Natural stone tiles, like marble or granite, offer unique variations and natural beauty. </p>
+            </div>
+            <button class="accordian">8. Are tiles suitable for high-traffic areas, and do they require special maintenance? </button>
+            <div class="panel">
+                <p>Porcelain tiles are highly durable and can withstand heavy foot traffic. Regular sweeping and damp mopping are usually sufficient for maintenance. Applying a sealant to natural stone tiles can help protect them and maintain their appearance.</p>
+            </div>
+            <button class="accordian">9. How can I ensure the longevity of my tile floor? </button>
+            <div class="panel">
+                <p>Preventive measures include using doormats to minimize dirt and debris, promptly cleaning up spills, using furniture protectors, and avoiding harsh cleaning agents or abrasive tools that can damage the tiles. Regular maintenance and proper sealing, as recommended, also contribute to longevity. </p>
+            </div>
+            <button class="accordian">10.	What are the benefits of different flooring materials like hardwood, laminate, vinyl, or engineered flooring? </button>
+            <div class="panel">
+                <p>Hardwood flooring offers timeless beauty and can be refinished to restore its original appearance. Laminate flooring is affordable, durable, and replicates the look of natural materials. Vinyl flooring is water-resistant, low-maintenance, and available in a wide variety of styles. Engineered flooring combines the aesthetics of hardwood with enhanced stability and moisture resistance. </p>
+            </div>
+        </div><!--W3schools-->
+            
+        
+    </div>
+    
+
+    
+    
+    
+
+    <script>//W3schools
+        var acc = document.getElementsByClassName("accordian");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+
+        this.classList.toggle("active2");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+    </script><!--W3schools-->
+</body>
+
+
+</html>

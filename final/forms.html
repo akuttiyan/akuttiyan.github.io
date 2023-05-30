@@ -24,17 +24,18 @@
             <ul class="nav" >
                 <li><a href="index.html"  style="height: 50px; margin-top: 3px;">Home</a></li>
                 <li class="dropdown1" style="height: 50px; margin-top: 3px;">
-                    <a href="javascript:void(0)" class="dropbtn1">Gallery</a>
-                    <div class="dropdown-content1">
-                        <a href="gallery-carpet.html">Carpets</a>
-                        <a href="gallery-tile.html">Tiles</a>
-                        <a href="gallery-flooring.html">Hardwood</a>
+                    <a href="javascript:void(0)" class="dropbtn1">Gallery</a> <!--W3schools-->
+                    <div class="dropdown-content1"> <!--W3schools-->
+                        <a href="gallery-carpet.html">Carpets</a> <!--W3schools-->
+                        <a href="gallery-tile.html">Tiles</a> <!--W3schools-->
+                        <a href="gallery-flooring.html">Hardwood</a> <!--W3schools-->
                     </div>
                 </li>
-                <li class="active"><a href="about.html" style="height: 50px; margin-top: 3px;">About Us</a></li>
+                <li><a href="fqas.html" style="height: 50px; margin-top: 3px;">FAQS</a></li>
+                <li><a href="about.html" style="height: 50px; margin-top: 3px;">About Us</a></li>
                 <li>
                     <div class="grid-item quote-button"  style="height: 50px;">
-                        <a href="forms.html" class="btn btn-primary" role="button" style="margin-left: 850px;">Get an Estimate</a>
+                        <a href="forms.html" class="btn btn-primary" role="button" style="margin-left: 760px;">Get an Estimate</a>
                     </div>
                 </li>
             </ul>
@@ -42,12 +43,12 @@
 
 
         <div class=" grid-item header">
-            <h1 id="form-header">Please fill out the information to get an estimate</h1>
+            <h1 id="form-header">Please fill out the information to get an estimate</h1> 
         </div>
         <div class="grid-item forms">
-            <form action="" id="quote-form">
+            <form action="mailto:akuttiyan@eastsideprep.org" id="quote-form"> 
+                <h1 id="header"> </h1>
 
-                
                 <p>Please enter your email.</p>
                 <textarea name="text-entry" id="email" cols="20" rows="1" style="resize: none;"></textarea> <!--Stack Overflow-->
 
@@ -59,10 +60,9 @@
                 
                 <p>Is there anything else you would like us to know?</p>
                 <textarea name="text-entry" id="more-info" cols="20" rows="10" style="resize: none;"></textarea><br> <!--Stack Overflow-->
-
                 <br>
-
-                <input type="button" value="SUBMIT" onclick="check()">
+               
+                <input type="button" value="Send" onclick="checkIfEmpty()">
         
             </form>
         </div>

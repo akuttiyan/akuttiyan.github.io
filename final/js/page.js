@@ -7,7 +7,8 @@ let formHeader = document.getElementById("form-header");
 
 
 
-function check(){
+function checkIfEmpty(){
+
     email = document.getElementById("email").value;
     product = document.getElementById("product").value;
     measurements = document.getElementById("measurements").value;
@@ -33,8 +34,8 @@ function sendInfo(){
     let outputMeasurements = document.getElementById("output-measurements");
     let outputInfo = document.getElementById("output-info");
 
-    quoteForm.innerHTML = "";
-    formHeader.innerHTML = "";
+    quoteForm.innerHTML = ""; //stack overflow
+    formHeader.innerHTML = ""; // stack overflow
     
 
     paragraph.innerHTML = "Your Information has Been Sent!";
@@ -43,8 +44,15 @@ function sendInfo(){
     outputMeasurements.innerHTML = "Measurements: " + measurements;
     outputInfo.innerHTML = "Additional Information: " + moreInfo;
 
-
+    paragraph = "Your Information has Been Sent!";
+    outputEmail = "Email: " + email;
+    outputProduct = "Product: " + product;
+    outputMeasurements = "Measurements: " + measurements;
+    outputInfo = "Additional Information: " + moreInfo;
 }
+
+
+
 
 
 
