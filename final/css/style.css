@@ -10,7 +10,7 @@ h1{
     color:gray;
 }
 
-p{
+p, h2{
     color: rgb(108, 108, 108);
 }
 
