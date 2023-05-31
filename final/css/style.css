@@ -12,9 +12,14 @@ h1{
 
 p, h2{
     color: rgb(108, 108, 108);
+
+}
+
+p {
     font-family: "articulat-cf", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
 
 
