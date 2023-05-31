@@ -4,7 +4,9 @@ body{
 }
 
 h1{
-    font-family: articulat cf heavy;
+    font-family: "articulat-heavy-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     color:gray;
 }
 
@@ -33,7 +35,9 @@ li a, .droptbn1 { /* w3schools*/
     color:black;
     text-align: center;
     text-decoration: none;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -96,7 +100,9 @@ li.dropdown1{ /* w3schools*/
     grid-column: 1 / span 3;
     grid-row: 2;
     text-align: center;
-    font-family:articulat cf heavy;
+    font-family: "articulat-heavy-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 
 }
 
@@ -110,7 +116,9 @@ li.dropdown1{ /* w3schools*/
 .subtitle{
     grid-column: 2;
     grid-row: 4;
-    font-family: articulat cf normal;
+    font-family: "articulat-heavy-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     text-align: center;
 }
 
@@ -133,7 +141,9 @@ li.dropdown1{ /* w3schools*/
     grid-row: 5;
     margin-left: 30px;
     font-size: 17px;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-align:left
 }
 
@@ -144,7 +154,9 @@ li.dropdown1{ /* w3schools*/
     text-align: left;
     margin: 10px;
     color:white;
-    font-family: articulat cf extra light;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .logo{
@@ -162,7 +174,9 @@ li.dropdown1{ /* w3schools*/
     text-align: center;
     margin: 10px;
     color:white;
-    font-family: articulat cf extra light;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
 
 .hours{
@@ -170,7 +184,9 @@ li.dropdown1{ /* w3schools*/
     grid-row: 5;
     text-align:left;
     margin: 10px;
-    font-family: articulat cf extra light;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     background-color: rgba(112, 128, 144, 0.555);
     border-radius: 25px; /* w3schools*/
    
@@ -203,7 +219,9 @@ li.dropdown1{ /* w3schools*/
     grid-column: 1 / span 2;
     grid-row: 2;
     text-align: left;
-    font-family:articulat cf heavy;
+    font-family: "articulat-heavy-cf", sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 170px;
     color: gray;
     
@@ -212,7 +230,9 @@ li.dropdown1{ /* w3schools*/
 .about-info{
     grid-column:1 / span 3;
     grid-row: 4;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: larger;
     margin-left: 120px;
     margin-right: 120px;
@@ -227,7 +247,9 @@ li.dropdown1{ /* w3schools*/
 .about-h2{
     grid-column: 1;
     grid-row: 3;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-left: 500px;
     margin-right: 50px;
 }
@@ -235,7 +257,9 @@ li.dropdown1{ /* w3schools*/
 .about-h2-2nd{
     grid-column: 1;
     grid-row: 5;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-left: 500px;
     margin-right: 50px;
 }
@@ -244,7 +268,9 @@ li.dropdown1{ /* w3schools*/
     grid-column:1 / span 3;
     grid-row: 6;
     text-align: left;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: larger;
     margin-left: 120px;
     margin-right: 120px;
@@ -253,7 +279,9 @@ li.dropdown1{ /* w3schools*/
 .about-h2-3rd{
     grid-column: 1;
     grid-row: 7;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-left: 500px;
     margin-right: 50px;
 }
@@ -262,7 +290,9 @@ li.dropdown1{ /* w3schools*/
     grid-column:1 / span 3;
     grid-row: 8;
     text-align: left;
-    font-family: articulat cf normal;
+    font-family: "articulat-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: larger;
     margin-left: 120px;
     margin-right: 120px;
