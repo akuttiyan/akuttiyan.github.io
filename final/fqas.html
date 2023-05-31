@@ -12,18 +12,18 @@
         .accordian{ /* W3schools */
         background-color: slategray;
         color:white;
-        cursor: pointer;
+        cursor: pointer; /* changes cursor to hand pointer */
         padding: 18px;
         width: 100%;
         text-align: left;
         border: none;
         outline: none;
         font-size: 15px;
-        transition: 0.4s;
+        transition: 0.4s; /* shows the length of the transition */
         }
     
         .active2, .accordian:hover{  /* W3schools */
-            background-color: rgb(95, 109, 123);
+            background-color: rgb(95, 109, 123); /* when clicked or hovered over, the panel is gray */
         }
 
         .title{
@@ -41,7 +41,7 @@
         }
 
         .accordian:after{ /* W3schools */
-            content: '\002B';
+            content: '\002B'; /* adds a plus sign after elements in the accordian class */
             color:black;
             font-weight:bold;
             float:right;
@@ -51,7 +51,7 @@
         }
 
         .active2:after { /* W3schools */
-            content: "\2212";
+            content: "\2212"; /* Adds a minus sign after elements in the accordian class that have been clicked  */
         }
     
         .panel{  /* W3schools */
@@ -60,7 +60,7 @@
             
             max-height:0;
             overflow: hidden;
-            transition: max-height 0.2s ease-out;
+            transition: max-height 0.2s ease-out; /* adds a smooth transition that lasts 0.2 seconds that changes the max-height of the panels*/
         }
 
 
@@ -91,12 +91,15 @@
                 </li>
             </ul>
         </div>
+
         <div class="grid-item title">
             <h1>Frequently Asked Questions</h1>
         </div>
+
         <div class="grid-item img">
             <img src="images/FAQ2.jpg" alt="Fancy blue and white living room" style="width: 1250px; margin-bottom: 5px;">
         </div>
+
         <div class="grid-item acc-container"><!--W3schools-->
             <button class="accordian">1. What are the advantages of carpets over other flooring options? </button> <!--W3schools-->
             <div class="panel"><!--W3schools-->
@@ -151,22 +154,26 @@
     
 
     <script>//W3schools
-        var acc = document.getElementsByClassName("accordian");
+        var acc = document.getElementsByClassName("accordian"); //gets the accordian class
     var i;
     
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
+    for (i = 0; i < acc.length; i++) { //gives this code to every accordion in the accodian class
+      acc[i].addEventListener("click", function() { //if the accordion is clicked it runs function()
 
-        this.classList.toggle("active2");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
+        this.classList.toggle("active2"); // function() assigns the accordian to the class active2, so that it changes color when clicked
+        var panel = this.nextElementSibling; //panel = the answer to the question 
+        if (panel.style.maxHeight) { // function() also says that if the panel is open
+          panel.style.maxHeight = null;//then collapse the panel when clicked
+        } else {// and if the panel is collapsed
+          panel.style.maxHeight = panel.scrollHeight + "px";// then open the panel when clicked
         } 
       });
     }
     </script><!--W3schools-->
+
+<script type='text/javascript'>
+    (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'zodRY2nfCp2iLEm8F_c', {});
+</script>
 </body>
 
 
