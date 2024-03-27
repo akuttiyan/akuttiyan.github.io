@@ -1,0 +1,65 @@
+body{
+    background-color:darkgrey;
+
+}
+.dropbtn{
+    background-color:cadetblue;
+    color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:aliceblue;
+    z-index:1;
+    width: 130px;
+}
+
+.dropdown-content a{
+    color: rgb(8, 8, 8);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color:rgb(25, 153, 189);
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color:rgb(176, 199, 220);
+}
+
+h1{
+    text-align:center;
+}
+
+h2{
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.flex-item-paragraph{
+
+    overflow-wrap: break-word;
+}
+
+
