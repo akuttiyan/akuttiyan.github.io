@@ -6,7 +6,7 @@ import csv # From Analytics Vidhya
 import hashlib # From Geeks for Geeks and Analytics Vidhya
 
 # opens file with data
-patient_data = open('cancer_patient_data.csv') # From Analytics Vidhya
+patient_data = open('cs-in-healthcare\code\cancer_patient_data.csv') # From Analytics Vidhya
 
 # reads in the data in the file
 csv_reader = csv.reader(patient_data) # From Analytics Vidhya
