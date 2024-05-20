@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phylogenetics</title>
+    <link rel="stylesheet" href="../Website/css/index.css">
 </head>
 <body>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="dropdown">
+                <button class="dropbtn">Weekly Topics</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="data-storage.html">Healthcare Data Storage</a>
+                    <a href="data-analysis.html">Healthcare Data Analysis</a>
+                    <a href="genomics.html">Bioinformatics: Genomics</a>
+                    <a href="phylogenetics.html">Bioinformatics: Phylogenetics</a>
+                    <a href="pharmacology.html">Pharmacology</a>
+                    <a href="decision-support-systems.html">Clinical Decision Support Systems</a>
+                    <a href="psychology.html">Psychology</a>
+                    <a href="culminating-project.html">Culminating Project</a>    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex-row">
+
+            <div class="side-box">
+                <p> </p>
+            </div>
+            <div class="flex-item-paragraph">
+
+                <h1 class="flex-item">Phylogenetics</h1>
+
+                
+                <p>Phylogenetics is the study of evolutionary relationships. Using phylogenetic trees, evolutionary relationships can be shown. Phylogenetic trees are diagrams where organisms are shown as leaves that branch off of their ancestors. Computer programs are used to construct phylogenetic trees based on the similarities seen in DNA, RNA or protein sequences. </p>
+                <h3>Alignment Methods</h3>
+
+                <p>A useful way for finding similarities between sequences is alignment. Alignment is exactly like it sounds. All the sequences of the DNA from each organism being compared are aligned together so that each nucleotide lines up. This can help with finding similarities between sequences.  
+                </p>
+            
+                <p>To find alignment between sequences an evolutionary model is needed. Since we can't know for sure whether any of the evolutionary relationships are correct, phylogenetics relies on statistical models. A best fit model is found using statistical testing. From a set of possible models, a model that best fits the data is chosen using likelihood ratio tests or information criteria. After this model aligns the data, other methods are used to sort the sequence into an evolutionary hierarchy.
+            
+                </p>
+            
+                <p>2 of these types of methods are distance based methods and character based methods. Distance based methods look at the similarity of the sequences, and based on their similarity the distance between the sequences is measured. The distances is used to create the phylogenetic tree. Some examples of distance based methods are neighbor joining and UPGMA. The character based method, however, looks directly at the sequence. Some examples of character based methods are maximum parsimony and maximum likelihood. 
+                </p>
+            
+                <p>The distance based method is faster than the character based method, but they both have their limitations. For example, alignment methods don't work with longer sequences, sometimes alignment is incorrect and even if alignment is correct the sequences can still be incorrectly separated into the evolutionary hierarchy. More complex iterative programming is needed to solve these problems, which makes it harder to use larger datasets. Therefore, many people are striving to create more accurate alignment methods.
+                </p>
+            
+                <h3>Alignment Free Methods</h3>
+                <p>There are also alignment free methods. One example of this is the k-tuple method. This method represents the sequence as a vector containing the frequencies of subsequences in the sequence. The similarity between sequences is measured using their frequency matrices. There are also probabilistic methods that use the transition matrix of a Markov Chain to find evolutionary relationships. A Markov Chain represents states whose probability of occurring in the future is based on the current state. The transition matrix represents the probability of each possible state based on what the current state is. The distance between transition matrices are found to form the evolutionary relationships. 
+                </p>
+            
+                <p>2d, 3d and multi-dimensional graphs are also useful in finding evolutionary relationships between the sequences.
+                </p>
+            
+                <p>Alignment-free methods also have their limitations. For the k-tuple method, a high k value takes up a lot of time and space. Also, many alignment-free algorithms don't create accurate phylogenetic trees.</p>
+    
+                <h2>Phylogenetics and Healthcare</h2>
+                <p>There are many ways that this is applied in the healthcare field. For example, it can help in understanding the evolution of certain viruses which can be helpful in creating vaccines for these viruses. It can also help with understanding how contagious diseases spread. 
+                </p>
+
+                <p>It is also very useful in the cancer field. The study of phylogenetics sheds lights on the sequences and genes of different types of breast cancer and can help with classifying different cancers based on mutations.  Similarities between tumors can also be identified.
+                </p>
+    
+            </div>
+
+            <div class="side-box">
+                <p> </p>
+            </div>
+            
+        </div>
+
+        </div>
     
 </body>
 </html>
