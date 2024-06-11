@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Culminating Project</title>
+    <link rel="stylesheet" href="../Website/css/index.css">
 </head>
 <body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="dropdown">
+                <button class="dropbtn">Weekly Topics</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="data-storage.html">Healthcare Data Storage</a>
+                    <a href="data-analysis.html">Healthcare Data Analysis</a>
+                    <a href="genomics.html">Bioinformatics: Genomics</a>
+                    <a href="phylogenetics.html">Bioinformatics: Phylogenetics</a>
+                    <a href="pharmacology.html">Pharmacology</a>
+                    <a href="decision-support-systems.html">Clinical Decision Support Systems</a>
+                    <a href="psychology.html">Psychology</a>
+                    <a href="culminating-project.html">Culminating Project</a>    
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="flex-row">
+
+            <div class="side-box">
+                <p> </p>
+            </div>
+            <div class="flex-item-paragraph">
+
+                <h1 class="flex-item">Culminating Project</h1>
+                <h2 class="flex-item">Project Overview</h2>
+                
+                <p>For my culminating project for my independent study I decided to run data analysis on a dataset I found about dementia. I had 3 questions I wanted to explore: How is mental health connected to dementia? Which of the genetic factors in the dataset is the most impactful on dementia risk? Which of the overall factors in the dataset is the most impactful on dementia risk?</p>
+                <p>I also decided to make a neural network that uses the data in this dataset to predict if someone has dementia. </p>
+        
+                <h2>Data Analysis</h2>
+                <h3>Exploring How Mental Health is Connected to Dementia</h3>
+                <p>For the mental health question, I first found all the factors in the dataset that I thought were connected to mental health. I selected blood alcohol levels, sleep quality, smoking status, physical activity and depression status. I made bar charts of the amount of people diagnosed with dementia in each category to see if I could find any patterns and trends. </p>
+                <p>Based on the data, the depression status and physical activity didn't have much of an impact on dementia. However, those with poor sleep experienced slightly more cases of dementia. Something I thought was interesting was how all the current smokers didn't have dementia. After doing some research, I learned that there are studies into nicotine that suggest that nicotine can help with reaction time, learning and memory, so maybe this leads to smokers having a lower chance of developing dementia. It is a complicated relationship however, because nicotine can also increase cardiovascular diseases, which increases risk of dementia. For the alcohol levels, those with the highest levels of alcohol and the lowest levels of alcohol had the highest numbers of dementia. After doing some further research, I learned that there are some studies that suggest that quitting alcohol and increased alcohol usage can lead to an increased risk of dementia. </p>
+                <p>Overall, the dataset doesn't show much of a connection between mental health and dementia. However, based on further research I know that depression does increase the risk of dementia and is an early symptom that suggests an onset of dementia.</p>
+                
+                
+                <p>Translational Informatics: When computer science is used to store and interpret biomedical or genomic data.</p>
+                <p>Clinical Informatics: When computer science is used in the treating and diagnosing of patients.</p>
     
+                
+                <h3>Exploring How Genetic Factors are Connected to Dementia</h3>
+                <p>When I looked at the genetic factors I looked at the gender, family history and presence of the APOE4 gene. When looking at the bar charts for gender, both the male and female population had roughly equal amounts of dementia. After doing further research, I learned that women have a higher chance of developing dementia than men. I was surprised to see that those with no family history had a higher amount of dementia than those with family history, even though outside research suggests that those with family history have a higher change of getting dementia. That being said, both those without family history and with family history had around the same amount of people with dementia, so this feature was inconclusive. When I looked at the bar charts for the APOE4 gene, it seemed to be the most impactful genetic factor on dementia risk. Of all the people that had dementia, 89.6% had the APOE4 gene.</p>
+    
+                <h3>Which Factor is the Most Impactful on Dementia Risk</h3>
+                <p>When looking at all the factors and finding which were the most impactful, I decided to get the amount of people that had dementia in each category of a feature and then find the standard deviation of the counts of people with dementia. I thought that if the data was more varied that would mean it favors one category over another, which might show a factor that is impactful. For example, the APOE4 gene data shows that there is 435 people with dementia that have the APOE4 gene and 50 people with dementia without the APOE4 gene. This variance shows the possible connection between APOE4 and dementia.</p>
+    
+                <h3>Clinical Decision Making Support Systems</h3>
+                <p>Decision making support systems help complement a doctor's skills. Computers are reliable, fast and have a lot of memory. So these systems are able to diagnose patients as well has come up with possible treatment plans.  The program parses the patient data and uses its knowledge base on the healthcare field to produce predictions and decisions.</p>
+                <p>I took the standard deviations for each feature, and the features with the highest standard deviations were APOE4 gene presence, smoking status, chronic health conditions, education level and cognitive test scores. When I explored the chronic health conditions I found that people with diabetes had more dementia. However, when I looked at the dataset I saw that there was in general more people with diabetes than with heart disease or hypertension, which could have led to a higher count of people with dementia that also have diabetes. So maybe the connection between people with chronic illnesses and dementia in this dataset is inconclusive. When I looked at the education levels, people with a diploma/higher education had lower levels of dementia. When I did outside research I learned that higher education can lower the risk of dementia because it develops synapses in the brain. When I looked at the cognitive test score data, those with higher cognitive test scores had less dementia.</p>
+                <p>Overall, I found that the possible most impactful factors are APOE4 gene presence, smoking status, chronic health conditions, education level and cognitive test scores.</p>
+    
+                <h2>Neural Network</h2>
+                <p>
+                    For the neural network, I used keras to stack together multiple Dense layers. At first I used all the data in the dataset to train the model and I tweaked the amount of layers, the nodes in the layers and the activation function. I ended up getting an accuracy score around 60%. I then decided to use only the top 5 most impactful features that I found from the data analysis and got an accuracy score of 88%.</p>
+
+                <h2>Code</h2>
+                
+            </div>
+
+            <div class="side-box">
+                <p> </p>
+            </div>
+            
+        </div>
+
+        </div>
+
 </body>
 </html>
