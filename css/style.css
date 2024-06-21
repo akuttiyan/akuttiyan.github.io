@@ -4,19 +4,19 @@ body{
 }
 
 h1{
-    font-family: "articulat-heavy-cf", sans-serif;
+    font-family: "articulat-cf", sans-serif;
     font-weight: 900;
     font-style: normal;
-    color:gray;
+    /*color:gray;*/
 }
 
 p, h2{
-    color: rgb(108, 108, 108);
+    /*color: rgb(108, 108, 108);*/
 
 }
 
 p {
-    font-family: "articulat-cf", sans-serif;
+    /*font-family: "articulat-cf", sans-serif; */
     font-weight: 400;
     font-style: normal;
 
@@ -43,7 +43,7 @@ li a, .droptbn1 { /* w3schools*/
     color:black;
     text-align: center;
     text-decoration: none;
-    font-family: "articulat-cf", sans-serif;
+    /*font-family: "articulat-cf", sans-serif;*/
     font-weight: 400;
     font-style: normal;
 
@@ -52,7 +52,7 @@ li a, .droptbn1 { /* w3schools*/
 
 
 ul.nav a:hover, .dropdown1:hover .dropbtn1 { /* w3schools*/
-    background-color:skyblue;
+    /*background-color:skyblue; */
     color:aliceblue;
 }
 
@@ -149,7 +149,7 @@ li.dropdown1{ /* w3schools*/
     grid-row: 5;
     margin-left: 30px;
     font-size: 17px;
-    font-family: "articulat-cf", sans-serif;
+    /*font-family: "articulat-cf", sans-serif;*/
     font-weight: 400;
     font-style: normal;
     text-align:left
@@ -298,7 +298,7 @@ li.dropdown1{ /* w3schools*/
     grid-column:1 / span 3;
     grid-row: 8;
     text-align: left;
-    font-family: "articulat-cf", sans-serif;
+    /*font-family: "articulat-cf", sans-serif; */
     font-weight: 400;
     font-style: normal;
     font-size: larger;
@@ -475,7 +475,75 @@ li.dropdown1{ /* w3schools*/
     grid-row: 5
 }
 
+.sub-header{
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    text-align: center;
+}
+
+.about-me-img{
+    width: 300px;
+    margin: 5px;
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 20px;
+
+}
+
+.about-me-paragraph{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 350px;
+    margin-top: 20px;
+
+}
+
+.piano-img{
+    grid-column: 1;
+    grid-row: 5;
+    width: 400px;
+    margin-left: 20px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 5px;
+    /*grid-column: 1; */
+    /*grid-row: 2; */
+
+}
+
+.is-paragraph{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 450px;
+    margin-top: 30px;
+    
+
+}
+
+.bioinformatics-img{
+    width: 400px;
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 10px;
 
 
+}
 
+.is-paragraph-2{
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 20px;
+    margin-left: 10px;
 
+}
+
+.table{
+    grid-column: 1;
+    grid-row : 5;
+    margin-left: 10px;
+
+}
